@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Animation</title>
+    <style>
+      body {
+        color: yellow;
+        background-color: black;
+        margin: 0px;
+      }
+      h1{
+        display: flex;
+        justify-content: center;
+        background-color: gray;
+        margin: 0px;
+        padding: 20px;
+      }
+      .image-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      img {
+        width: 500px;
+        height: auto;
+        overflow: hidden;
+      }
+      #img-container {
+        transition: opacity 0.5s ease-in-out;
+        border: 1px solid #ccc;
+      }
+      title
+    </style>
+  </head>
+  <body>
+    <h1>Smooth Images Animation</h1>
+    <div class="image-body">
+      <div id="img-container">
+        <img src="images/755.jpg" />
+      </div>
+    </div>
+    <script>
+      let images = [
+        "images/755.jpg",
+        "images/barbary-macaque-8142917_640.webp",
+        "images/digitally-generated-image-of-isometric-data-chart.webp",
+        "images/free-photo-of-a-person-holding-a-cup-of-coffee-in-bed.webp",
+        "images/perfect-yellow-flower.webp",
+        "images/red-foiled-hearts-on-a-pink-background.webp",
+        "images/Summer-Sports.webp",
+      ];
+      let imgCon = document.getElementById("img-container");
+      let count = 0;
+      function changeimg() {
+        imgCon.style.opacity = 0;
+
+        setTimeout(() => {
+          count = (count + 1) % images.length;
+          imgCon.style.opacity = 0;
+          document.querySelector("img").src = images[count];
+          imgCon.style.opacity = 1;
+        }, 500);
+      }
+
+      setInterval(changeimg, 3000);
+    </script>
+  </body>
+</html>

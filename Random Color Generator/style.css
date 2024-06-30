@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 1s ease;
+  background-color: black;
+}
+.box {
+  width: 700px;
+  height: 450px;
+  background-color: grey;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 3px balck solid;
+  border-radius: 10px;
+}
+#Title {
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  padding-bottom: 0px;
+}
+.random-color {
+  background-color: red;
+}
+#Outer-container {
+  justify-content: center;
+  border: 3px black solid;
+  border-radius: 10px; /* Adjust the border-radius value as needed */
+  align-items: center;
+  width: 350px;
+  height: 300px;
+  position: absolute;
+  right: 30px;
+  top: 50%; /* Adjust the top position */
+  transform: translateY(-50%);
+}
+#form-data {
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 250px;
+  position: absolute;
+  left: 30px;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+#input {
+  font-size: 30px;
+  width: 220px;
+  margin: 40px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+}
+#btn {
+  font-size: 25px;
+  width: 200px;
+  margin: 40px;
+  margin-left: 0px;
+  padding: 10px;
+  margin-left: 15px;
+
+  border-radius: 10px;
+}
+#btn:hover {
+  background-color: black;
+  color: yellow;
+  border-color: white;
+  border-width: 3px;
+}
