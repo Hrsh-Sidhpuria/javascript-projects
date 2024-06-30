@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Practice</title>
+
+    <style>
+      body {
+        color: white;
+        background-color: black;
+      }
+      h1 {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+      img {
+        width: auto;
+        height: 200px;
+        margin: 10px;
+        border: 3px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>onclick remove image</h1>
+
+    <ul>
+      <li><img src="images/755.jpg" id="thanos" alt="demo-images" /></li>
+      <li>
+        <img
+          src="images/barbary-macaque-8142917_640.webp"
+          id="monkey"
+          alt="demo-images"
+        />
+      </li>
+      <li>
+        <img
+          src="images/digitally-generated-image-of-isometric-data-chart.webp"
+          alt="demo-images"
+          id="gradiant"
+        />
+      </li>
+      <li>
+        <img
+          src="images/free-photo-of-a-person-holding-a-cup-of-coffee-in-bed.webp"
+          alt="demo-images"
+          id="coffee"
+        />
+      </li>
+      <li>
+        <img
+          src="images/perfect-yellow-flower.webp"
+          id="flower"
+          alt="demo-images"
+        />
+      </li>
+      <li>
+        <img
+          src="images/red-foiled-hearts-on-a-pink-background.webp"
+          alt="demo-images"
+          id="heart"
+        />
+      </li>
+      <li>
+        <img src="images/Summer-Sports.webp" id="cricket" alt="demo-images" />
+      </li>
+    </ul>
+    <script>
+      let item = document.querySelector("ul");
+      item.addEventListener("click", (e) => {
+        if (e.target.tagName == "IMG") {
+          console.log(e.target.parentElement);
+          let image = e.target.parentElement;
+          image.remove();
+        }
+      });
+    </script>
+  </body>
+</html>

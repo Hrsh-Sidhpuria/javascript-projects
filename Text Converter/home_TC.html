@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body_style">
+    <div class="text_container-1">
+      <div class="text_container">
+        <label for="text" class="text-label">Text Converter</label><br />
+
+        <textarea
+          name="text"
+          class="text-input"
+          placeholder="Enter here"
+          rows="3"
+          cols="50"
+        ></textarea>
+        <div class="error"></div>
+
+        <div>
+          <button class="btn-class" onclick="originalText()">Original</button>
+          <button class="btn-class" onclick="uppercaseText()">UpperCase</button>
+          <button class="btn-class" onclick="lowercase()">LowerCase</button>
+          <button class="btn-class" onclick="title()">Abc</button>
+          <button class="btn-class" onclick="boldtext()">bold</button>
+          <button class="btn-class" onclick="italictext()">italic</button>
+          <button class="btn-class" onclick="Underline()">Underline</button>
+          <button class="btn-class" onclick="Linethrough()">
+            Linethroughs
+          </button>
+        </div>
+        <p name="text" class="text-input-2" id="text-output"></p>
+        <div class="hello"></div>
+      </div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>

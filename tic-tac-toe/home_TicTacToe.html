@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tic-tac-toe Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tic Tac Toe</h1>
+      <button class="home">Home</button>
+      <button class="restart" onclick="restart_game()">Restart</button>
+    </header>
+    <main>
+      <!-- for displaying result on screen -->
+      <div class="display_result"></div>
+
+      <div class="turn">Turn : <span></span></div>
+      <table id="tic-tac-toe">
+        <tr class="row">
+          <td>
+            <button class="area" id="btn" onclick="tic_tac(0)"></button>
+          </td>
+          <td>
+            <button class="area" id="btn" onclick="tic_tac(1)"></button>
+          </td>
+          <td>
+            <button class="area" id="btn" onclick="tic_tac(2)"></button>
+          </td>
+        </tr>
+        <tr class="row">
+          <td>
+            <button class="area" id="btn" onclick="tic_tac(3)"></button>
+          </td>
+          <td>
+            <button class="area" id="btn" onclick="tic_tac(4)"></button>
+          </td>
+          <td>
+            <button class="area" id="btn" onclick="tic_tac(5)"></button>
+          </td>
+        </tr>
+        <tr class="row">
+          <td>
+            <button class="area" id="btn" onclick="tic_tac(6)"></button>
+          </td>
+          <td>
+            <button class="area" id="btn" onclick="tic_tac(7)"></button>
+          </td>
+          <td>
+            <button class="area" id="btn" onclick="tic_tac(8)"></button>
+          </td>
+        </tr>
+      </table>
+    </main>
+    <script src="style.js"></script>
+  </body>
+</html>
