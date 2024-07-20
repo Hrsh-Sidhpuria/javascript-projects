@@ -73,7 +73,8 @@ function winning_cond(params) {
     (play[1] == "X" && play[4] == "X" && play[7] == "X") ||
     (play[2] == "X" && play[4] == "X" && play[6] == "X") ||
     (play[3] == "X" && play[4] == "X" && play[5] == "X") ||
-    (play[6] == "X" && play[7] == "X" && play[8] == "X")
+    (play[6] == "X" && play[7] == "X" && play[8] == "X") ||
+    (play[2] == "X" && play[5] == "X" && play[8] == "X")
   ) {
     result.innerHTML = "X Win";
 
@@ -85,7 +86,8 @@ function winning_cond(params) {
     (play[1] == "O" && play[4] == "O" && play[7] == "O") ||
     (play[2] == "O" && play[4] == "O" && play[6] == "O") ||
     (play[3] == "O" && play[4] == "O" && play[5] == "O") ||
-    (play[6] == "O" && play[7] == "O" && play[8] == "O")
+    (play[6] == "O" && play[7] == "O" && play[8] == "O") ||
+    (play[2] == "O" && play[5] == "O" && play[8] == "O")
   ) {
     result.innerHTML = "O Win";
 
