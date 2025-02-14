@@ -12,62 +12,64 @@
     />
     <link rel="stylesheet" href="CSS/style.css" />
     <style>
+      .card {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        width: 100%;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        overflow: hidden;
+        transition: transform 0.3s;
+      }
 
-        
-        .card {
-          background-size: cover;
-          background-position: center;
-          height: 300px;
-          color: white;
-          text-align: center;
-          position: relative;
-          overflow: hidden;
-          transition: transform 0.3s;
-        }
-    
-        .card:hover {
-          transform: scale(1.05);
-        }
-    
-        .card-body {
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          background: rgba(0, 0, 0, 0.5);
-          transition: background 0.3s;
-        }
-    
-        .card:hover .card-body {
-          background: rgba(0, 0, 0, 0.8);
-        }
-    
-        .description {
-          opacity: 0;
-          transition: opacity 0.3s;
-        }
-    
-        .card:hover .description {
-          opacity: 1;
-        }
-    
-        .card:hover .name {
-          opacity: 0;
-        }
-      </style>
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card-body {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.5);
+        transition: background 0.3s;
+      }
+
+      .card:hover .card-body {
+        background: rgba(0, 0, 0, 0.8);
+      }
+
+      .description {
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      .card:hover .description {
+        opacity: 1;
+      }
+
+      .card:hover .name {
+        opacity: 0;
+      }
     </style>
   </head>
   <body class="bg-dark text-light">
     <header>
       <nav
-        class="navbar navbar-expand-lg navbar-light bg-light custom-navbar-padding"
+        class="navbar navbar-expand-lg bg-black text-white bg-light custom-navbar-padding"
       >
-        <a class="navbar-brand" href="#"> Javascript Projects</a>
+        <a class="navbar-brand m-lg-2 text-white" href="#"
+          >JavaScript Projects</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -82,94 +84,154 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home</a
-              >
+              <a class="nav-link text-white" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link text-white" href="#">About</a>
             </li>
-            
           </ul>
         </div>
       </nav>
     </header>
 
-    <!-- card -->
+    <!-- Cards -->
     <div class="container mt-5">
       <div class="row">
-        <div class="col-md-4 mb-4">
+        <div class="col-md-3 mb-4">
           <a
             href="choose_player_in_TicTacToe.html"
             class="card"
-            style="background-color: rgb(35, 107, 107)"
+            target="_blank"
+            style="background-color: rgb(213, 224, 46)"
           >
             <div class="card-body">
               <h5 class="name">Tic Tac Toe Game</h5>
-              <p class="description">The classic Tic Tac Toe game offers both single-player and multiplayer modes. In single-player mode, the game user the Minimax Algorithm to play against the AI. The project features a responsive design and an intuitive user interface, providing interactive gameplay with automatic win detection. This project showcases my expertise in front-end development and dynamic web applications.</p>
+              <p class="description">
+                The classic Tic Tac Toe game offers both single-player and
+                multiplayer modes. In single-player mode, the game uses the
+                Minimax Algorithm to play against the AI. The project features a
+                responsive design and an intuitive user interface, providing
+                interactive gameplay with automatic win detection. (In JS)
+              </p>
             </div>
           </a>
         </div>
-        <div class="col-md-4 mb-4">
+
+        <div class="col-md-3 mb-4">
           <a
             href="onclick image remove/home_Onclick.html"
             class="card"
+            target="_blank"
             style="background-color: rgb(175, 62, 128)"
           >
             <div class="card-body">
               <h5 class="name">Onclick Image Remove</h5>
-              <p class="description">on clicking to image the image gets disappear . (for practice purpose )</p>
+              <p class="description">
+                On clicking an image, it disappears. (For practice purposes) (In
+                JS).
+              </p>
             </div>
           </a>
         </div>
-        <div class="col-md-4 mb-4">
+
+        <div class="col-md-3 mb-4">
           <a
             href="Text Converter/home_TC.html"
             class="card"
+            target="_blank"
             style="background-color: rgb(57, 44, 177)"
           >
             <div class="card-body">
-              <h5 class="name">Text Converter </h5>
-              <p class="description">This project basically converts the entered text into uppercase , lowercase, titlecase, bold, italics,underline etc . during this project i learn about js string methods and DOM .</p>
+              <h5 class="name">Text Converter</h5>
+              <p class="description">
+                This project converts text into uppercase, lowercase, title
+                case, bold, italics, and underline. (In JS)
+              </p>
             </div>
           </a>
         </div>
-        <div class="col-md-4 mb-4">
-            <a
-              href="Search and Highlight/home_S&H.html"
-              class="card"
-              style="background-color: rgb(116, 175, 116)"
-            >
-              <div class="card-body">
-                <h5 class="name">Search and Highlighter</h5>
-                <p class="description">This Projects search for a text and highlight it .(for practice purpose )</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 mb-4">
-                <a
-                    href="Random Color Generator/RandomColor.html"
-                    class="card"
-                    style="background-color: rgb(143, 33, 216);"
->
-                    <div class="card-body">
-                        <h5 class="name">Random Color Generator</h5>
-                        <p class="description">This project is a random color generator application that uses JavaScript for functionality and CSS for styling. Users can click a button to generate a random color displayed in a designated container.it changes the background color automatically.</p>
-                    </div>
-                </a>
-          </div>
-          <div class="col-md-4 mb-4">
-            <a
-                href="text to speach/textToSearch.html"
-                class="card"
-                style="background-color: rgb(143, 33, 216);"
->
-                <div class="card-body">
-                    <h5 class="name">Text To Speech Converter</h5>
-                    <p class="description">A simple web application that converts written text into speech using the Web Speech API. Users can input text, select a voice, and listen to the spoken version in real time.</p>
-                </div>
-            </a>
-      </div>
+
+        <div class="col-md-3 mb-4">
+          <a
+            href="Search and Highlight/home_S&H.html"
+            class="card"
+            target="_blank"
+            style="background-color: rgb(116, 175, 116)"
+          >
+            <div class="card-body">
+              <h5 class="name">Search and Highlighter</h5>
+              <p class="description">
+                This project searches for text and highlights it. (In JS).
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <a
+            href="Random Color Generator/RandomColor.html"
+            class="card"
+            target="_blank"
+            style="background-color: rgb(143, 33, 216)"
+          >
+            <div class="card-body">
+              <h5 class="name">Random Color Generator</h5>
+              <p class="description">
+                Generates random colors and changes the background
+                automatically. (In JS)
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <a
+            href="text to speach/textToSearch.html"
+            class="card"
+            target="_blank"
+            style="background-color: rgb(175, 70, 70)"
+          >
+            <div class="card-body">
+              <h5 class="name">Text To Speech Converter</h5>
+              <p class="description">
+                A web app that converts text into speech using the Web Speech
+                API. (In JS)
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <a
+            href="https://landing-page-by-harshsidhpuria.netlify.app/"
+            class="card"
+            target="_blank"
+            style="background-color: rgb(18, 50, 87)"
+          >
+            <div class="card-body">
+              <h5 class="name">Mordern Landing Page</h5>
+              <p class="description">
+                this is a Mordern and unique Landing Page.(In JS).
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <a
+            href="https://hrsh-sidhpuria.github.io/Learning-React/"
+            target="_blank"
+            class="card"
+            style="background-color: rgb(133, 37, 24)"
+          >
+            <div class="card-body">
+              <h5 class="name">Dragable TO DO List</h5>
+              <p class="description">
+                This is a mordern and Dragable to do list.(In REACT).
+              </p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
 
